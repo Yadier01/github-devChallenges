@@ -26,7 +26,7 @@ function App() {
 
   const submitHandler = (e: any) => {
     e.preventDefault();
-    setSubmitedText((prev) => (prev = text));
+    setSubmitedText(() => text);
     console.log(submitedText);
   };
   useEffect(() => {
