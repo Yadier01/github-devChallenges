@@ -1,4 +1,3 @@
-import React from "react";
 import data from "../dataRepos.json";
 
 export const Repos = () => {
@@ -13,14 +12,14 @@ export const Repos = () => {
   };
 
   return (
-    <span className="flex gap-7 flex-col ">
+    <span className="grid grid-cols-1 md:grid-cols-2  gap-7 flex-col     md:flex-row flex-wrap">
       {data.map((repo) => (
         <article
-          className="from-[#111729] bg-gradient-to-r f to-[#1D1B48] flex flex-col gap-3 p-4 rounded-md text-white"
+          className="from-[#111729] bg-gradient-to-r f text-[#4A5567] to-[#1D1B48] flex flex-col gap-3 p-4 rounded-md "
           key={repo.id}
         >
-          <h3>{repo.name}</h3>
-          <p>
+          <h3 className="text-white">{repo.name}</h3>
+          <p className="text-[#4A5567]">
             {repo.description} Lorem ipsum dolor sit, amet consectetur
             adipisicing elit. Et, nihil.
           </p>
