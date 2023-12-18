@@ -57,8 +57,7 @@ export const Repos = ({ submitedText }: ReposProps) => {
             >
               <h3 className="text-white">{item.name}</h3>
               <p className="text-[#4A5567]">
-                {item.description} Lorem ipsum dolor sit, amet consectetur
-                adipisicing elit. Et, nihil.
+                {item.description}
               </p>
               <div className="flex gap-3">
                 {item.license && (
